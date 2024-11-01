@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- aos -->
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <!-- font_family -->
+        <!-- <link rel="stylesheet" href="font/montserrat/static/Montserrat-Bold.ttf">
+        <link rel="stylesheet" href="font/montserrat/static/Montserrat-Regular.ttf"> -->
+</head>
+
+<body>
+    
+    <div class="wide_nav py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-3">
+                    <div class="navbar_menu menu_1">
+                        <ul class="d-flex gap-4 text-white align-items-center mb-0 p-0 justify-content-start">
+                            <li class="d-flex gap-2 align-items-center">
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                                    aria-controls="offcanvasWithBothOptions">
+                                    <i class="fa-solid fa-bars box"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center">
+                                <a href="#search">
+                                    <i class="fa-solid fa-magnifying-glass box"></i>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="search" class=""> 
+                            <span class="close">X</span>
+                            <form role="search" id="searchform">
+                                <input type="search" placeholder="Type to search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="wide_brand">
+                        <a href="index.html">
+                            <h3 class="mb-0 text-center">HERBPAL</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="navbar_menu menu_2">
+                        <ul class="d-flex gap-4 text-white align-items-center mb-0 justify-content-end">
+                            <li class="d-flex gap-2 align-items-center">
+                                <a href="wishlist.html">
+                                    <i class="fa-solid fa-heart box"></i>
+                                    <span>Wish List</span>
+                                </a>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center">
+                                <a href="cart.html">
+                                    <i class="fa-solid fa-cart-shopping box"></i>
+                                    <span>My Bag : 01</span>
+                                </a>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center">
+                                <a href="login.html">
+                                    <i class="fa-regular fa-user box"></i>
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light d-none">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-3" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-center ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Academics</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="product.html">Our Product</a></li>
+                            <li><a class="dropdown-item" href="door-glass.html">Glass
+                                    Door</a></li>
+                            <li><a class="dropdown-item" href="swinging-shower.html">Swinging
+                                    Shower Door</a></li>
+                            <li><a class="dropdown-item" href="sliding-shower.html">Sliding
+                                    Shower & Tub Door</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Who We Are</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="head_btn">
+                <!-- <a href="#" class="theme_btn1" data-bs-toggle="modal" data-bs-target="#exampleModal">Get A Quote</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <section class="inner_banner inner_pd  position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="bann_heading text-white">
+                        <h2 class="bann_heading2 py-3">Checkout</h2>
+                        <div class="bann_btn">
+                            <a href="index.html">Home /</a>
+                            <a href="checkout.html" class="color_light">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section Start -->
+    <section class="checkout-section fix sec_pd">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-9">
+                    <form action="#" method="post">
+                        <div class="checkout-single-wrapper">
+                            <div class="checkout-single boxshado-single">
+                                <h4 class="color">Billing Details</h4>
+                                <div class="checkout-single-form">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>First Name*</span>
+                                                <input type="text" name="user-first-name" id="userFirstName" required=""
+                                                    placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>Last Name*</span>
+                                                <input type="text" name="user-last-name" id="userLastName" required=""
+                                                    placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>Company name (optional)</span>
+                                                <input name="company-name" id="companyname">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>Country*</span>
+                                                <input name="country" id="country" placeholder="Select a country">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="input-single">
+                                                <span>Street Address*</span>
+                                                <input name="user-address" id="userAddress"
+                                                    placeholder="Home number and street name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>Street Address*</span>
+                                                <input name="user-address" id="userAddress2"
+                                                    placeholder="Apartment, suite, unit, etc. (optional)">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>Town/ City*</span>
+                                                <input name="towncity" id="towncity">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>Phone*</span>
+                                                <input name="phone" id="phone" placeholder="phone">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-single">
+                                                <span>Email Address*</span>
+                                                <input name="email" id="email22" placeholder="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="input-check payment-save">
+                                                <input type="checkbox" class="form-check-input" name="save-for-next" id="saveForNext111">
+                                                <label for="saveForNext">Save for my next payment</label>
+                                            </div>
+                                            <!-- <div class="input-check payment-save style-2">
+                                                <input type="checkbox" class="form-check-input" name="save-for-next"
+                                                    id="saveForNext2">
+                                                <label for="saveForNext2">Ship to a different address?</label>
+                                            </div> -->
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="input-single">
+                                                <span>Order notes <small>(optional)</small></span>
+                                                <textarea name="notes" id="notes"
+                                                    placeholder="Notes about your order, e.g special notes for delivery."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <div class="checkout-order-area">
+                        <h3>Our Order</h3>
+                        <div class="product-checout-area s2_right">
+                            <div class="checkout-item d-flex align-items-center justify-content-between">
+                                <p>Product</p>
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="checkout-item d-flex align-items-center justify-content-between">
+                                <p>Sermons</p>
+                                <p>$29.00</p>
+                            </div>
+                            <div class="checkout-item d-flex justify-content-between">
+                                <p>Shipping</p>
+                                <div class="shopping-items">
+                                    <div class="form-check d-flex align-items-center from-customradio">
+                                        <label class="form-check-label">
+                                            Free Shipping
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault12">
+                                    </div>
+                                    <div class="form-check d-flex align-items-center from-customradio">
+                                        <label class="form-check-label">
+                                            Local: $15.00
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault123">
+                                    </div>
+                                    <div class="form-check d-flex align-items-center from-customradio">
+                                        <label class="form-check-label">
+                                            Flat rate: $10.00
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault124">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-item d-flex align-items-center justify-content-between">
+                                <p>Total</p>
+                                <p>$55.00</p>
+                            </div>
+                            <div class="checkout-item-2">
+                                <div class="form-check-2 d-flex align-items-center from-customradio-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1222">
+                                    <label class="form-check-label" for="flexRadioDefault1222">
+                                        Direct bank transfer
+                                    </label>
+                                </div>
+                                <p>
+                                    Make your payment directly into our bank account please use your Order ID as the
+                                    payment reference. Your order will not be shipped until the funds have cleared in
+                                    our account.
+                                </p>
+                                <div class="form-check-3 d-flex align-items-center from-customradio-2 mt-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault12224">
+                                    <label class="form-check-label" for="flexRadioDefault12224">
+                                        Cash on delivery
+                                    </label>
+                                </div>
+                                <div class="form-check-3 d-flex align-items-center from-customradio-2 mt-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault12225">
+                                    <label class="form-check-label" for="flexRadioDefault12225">
+                                        Paypal
+                                    </label>
+                                    <ul class="brand-logo list-unstyled mb-0">
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/PayPal.png" alt="img">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/GooglePay.png" alt="img">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/Mastercard2.png" alt="img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="theme_btn1 w-100 text-center">Proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pb-4 sec_pd">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="foot_box1 mb-5">
+                        <ul class="list-unstyled d-flex justify-content-center gap-5">
+                            <li class="footer_list"><a href="index.html">Home</a></li>
+                            <li class="footer_list"><a href="product.html">Shop</a></li>
+                            <li class="footer_list"><a href="about-us.html">About</a></li>
+                            <li class="footer_list"><a href="contact-us.html">Contact</a></li>
+                            <li class="footer_list"><a href="blog.html">Blog</a></li>
+                            <li class="footer_list"><a href="faq.html">Faq</a></li>
+                            
+                            <li><a href="terms-condition.html">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="foot_search d-flex align-items-center gap-2">
+                        <input type="text" placeholder="Your email here" class="w-100">
+                        <a href="#" class="">Submit</a>
+                    </div>
+                    <p class="text-white pt-3 pb-5 text-center">Subscribed Our News letter & get latest updations</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="foot_bottom_left pt-5">
+                        <p class="text-white mb-0">&copy; 2024 Herbpal Design Themes</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="foot_bottom_mid pt-5">
+                        <ul class="list-unstyled d-flex gap-4 justify-content-center mb-0">
+                            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                            <li><a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="foot_bottom_right pt-5 text-center">
+                        <img src="img/payment.png" class="img-fluid" alt="payment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title text-white" id="offcanvasWithBothOptionsLabel">We Provide</h5> -->
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/fontowesome.js" crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        speed: 1500,
+        pauseonhover: false,
+    });
+
+
+    $('.testimonial_slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        speed: 500,
+        pauseonhover: false,
+        
+    });
+    $('.blog_slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        arrows: false,
+        speed: 11000,
+        pauseOnHover: false,
+        cssEase: 'linear'
+    });
+</script>
+
+<script>
+
+    $.fn.jQuerySimpleCounter = function (options) {
+        var settings = $.extend({
+            start: 0,
+            end: 100,
+            easing: 'swing',
+            duration: 2000,
+            complete: ''
+        }, options);
+
+        var thisElement = $(this);
+
+        $({ count: settings.start }).animate({ count: settings.end }, {
+            duration: settings.duration,
+            easing: settings.easing,
+            step: function () {
+                var mathCount = Math.ceil(this.count);
+                thisElement.text(mathCount);
+            },
+            complete: settings.complete
+        });
+    };
+
+    $('#number1').jQuerySimpleCounter({ end: 4890, duration: 20000 });
+</script>
+
+<script>
+    $(document).ready(function(){
+  $('a[href="#search"]').on('click', function(event) {                    
+    $('#search').addClass('open');
+    $('#search > form > input[type="search"]').focus();
+  });            
+  $('#search, #search button.close').on('click keyup', function(event) {
+    if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+      $(this).removeClass('open');
+    }
+  });            
+});
+</script>
+
+<script>
+    const boxes = document.querySelectorAll('.box');
+
+// Loop through each element and add event listeners
+boxes.forEach(function(box) {
+    box.addEventListener('mouseenter', function() {
+        box.classList.add('fa-fade');
+    });
+
+    box.addEventListener('mouseleave', function() {
+        box.classList.remove('fa-fade');
+    });
+});
+</script>
+
+<script>
+     //12. Quantity 
+     const inputs = document.querySelectorAll('#qty, #qty2, #qty3');
+        const btnminus = document.querySelectorAll('.qtyminus');
+        const btnplus = document.querySelectorAll('.qtyplus');
+
+        if (inputs.length > 0 && btnminus.length > 0 && btnplus.length > 0) {
+
+            inputs.forEach(function (input, index) {
+                const min = Number(input.getAttribute('min'));
+                const max = Number(input.getAttribute('max'));
+                const step = Number(input.getAttribute('step'));
+
+                function qtyminus(e) {
+                    const current = Number(input.value);
+                    const newval = (current - step);
+                    if (newval < min) {
+                        newval = min;
+                    } else if (newval > max) {
+                        newval = max;
+                    }
+                    input.value = Number(newval);
+                    e.preventDefault();
+                }
+
+                function qtyplus(e) {
+                    const current = Number(input.value);
+                    const newval = (current + step);
+                    if (newval > max) newval = max;
+                    input.value = Number(newval);
+                    e.preventDefault();
+                }
+
+                btnminus[index].addEventListener('click', qtyminus);
+                btnplus[index].addEventListener('click', qtyplus);
+            });
+        }
+</script>
+
+</html>
